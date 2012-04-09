@@ -6,8 +6,9 @@
 , "author": { "name": "Stephane Alnet", "email": "stephane@shimaore.net" }
 , "repository": {
     "type": "git"
-  , "uri": "git://github.com/shimaore/password.git"
+  , "uri": "https://github.com/shimaore/password.git"
   }
+, "homepage": "https://github.com/shimaore/password"
 , "main": "lib/password.js"
 , "files": ["lib/password.js","lib/wordlist.json"]
 , "scripts": {
