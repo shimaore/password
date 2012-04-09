@@ -1,0 +1,21 @@
+{
+  "name": "password"
+, "version": "0.0.5"
+, "description": "Memorable passwords generator"
+, "keywords": "password generator"
+, "author": { "name": "Stephane Alnet", "email": "stephane@shimaore.net" }
+, "repository": {
+    "type": "git"
+  , "uri": "git://github.com/shimaore/password.git"
+  }
+, "main": "lib/password.js"
+, "files": ["lib/password.js","lib/wordlist.json"]
+, "scripts": {
+    "prepublish": "coffee -c lib/password.coffee"
+  }
+, "engines": {
+    "node": ">=0.4.7"
+  }
+, "private": false
+, "ok": true
+}
