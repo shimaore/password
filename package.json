@@ -1,20 +1,35 @@
 {
-  "name": "password"
-, "version": "0.1.0"
-, "description": "Memorable passwords generator"
-, "license": "UNLICENSE"
-, "keywords": ["password","generator"]
-, "author": { "name": "Stephane Alnet", "email": "stephane@shimaore.net" }
-, "repository": {
-    "type": "git"
-  , "url": "https://github.com/shimaore/password.git"
+  "name": "password",
+  "version": "0.1.0",
+  "description": "Memorable passwords generator",
+  "license": "UNLICENSE",
+  "keywords": [
+    "password",
+    "generator"
+  ],
+  "author": {
+    "name": "Stephane Alnet",
+    "email": "stephane@shimaore.net"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shimaore/password.git"
+  },
+  "homepage": "https://github.com/shimaore/password",
+  "main": "lib/password.js",
+  "files": [
+    "lib/password.js",
+    "lib/wordlist.json"
+  ],
+  "scripts": {
+    "prepublish": "coffee -c lib/password.coffee",
+    "test": "mocha --compilers coffee:coffee-script/register --reporter spec"
+  },
+  "private": false,
+  "ok": true,
+  "devDependencies": {
+    "coffee-script": "^1.8.0",
+    "mocha": "^1.21.4",
+    "should": "^4.0.4"
   }
-, "homepage": "https://github.com/shimaore/password"
-, "main": "lib/password.js"
-, "files": ["lib/password.js","lib/wordlist.json"]
-, "scripts": {
-    "prepublish": "coffee -c lib/password.coffee"
-  }
-, "private": false
-, "ok": true
 }
