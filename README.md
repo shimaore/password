@@ -14,3 +14,5 @@ You can also access the list of words:
 
     var words = require('password').wordlist;
     console.log(words[352]);
+
+[![Build Status](https://travis-ci.org/shimaore/password.svg?branch=master)](https://travis-ci.org/shimaore/password)
