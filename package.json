@@ -3,7 +3,7 @@
 , "version": "0.1.0"
 , "description": "Memorable passwords generator"
 , "license": "UNLICENSE"
-, "keywords": "password generator"
+, "keywords": ["password","generator"]
 , "author": { "name": "Stephane Alnet", "email": "stephane@shimaore.net" }
 , "repository": {
     "type": "git"
