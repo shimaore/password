@@ -1,8 +1,13 @@
+{randomBytes} = require 'crypto'
 {wordlist} = require './wordlist.json'
 
 module.exports = (l) ->
   return '' if l < 1
-  words = (wordlist[Math.floor(Math.random()*wordlist.length)] for i in [1..l])
-  return words.join(' ')
+  words = []
+  while words.length < l
+    random = randomBytes(2).readUInt16LE(0) & 0x7fff
+    continue if random >= wordlist.length
+    words.push wordlist[random]
+  return words.join ' '
 
 module.exports.wordlist = wordlist
